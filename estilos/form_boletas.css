@@ -1,0 +1,125 @@
+body{
+    opacity: 0;
+    transition: opacity 2s;
+    font-family: 'Quicksand', sans-serif;
+    border-left: 1rem solid rgb(0, 191, 166);
+}
+
+.main-boletas{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+
+    
+}
+
+.form-card{
+    background-color: rgba(217, 210, 210, 0.741);
+    height: 30vh;
+    width: 40vw;
+    padding: .5rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+
+}
+
+.boletas-card{
+    background-color: rgba(217, 210, 210, 0.741);
+    width: 40vw;
+    height: 60vh;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    overflow-y:auto;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.27);
+    align-items: center;
+
+
+}
+
+.boletas-card-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+th {
+    background-color: rgb(0, 191, 166);
+    color: white;
+  }
+table{
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: center;
+}
+
+th, td{
+    padding: .4rem;
+    border-bottom: 1px solid #ddd;
+}
+
+
+button{
+    background-color: rgb(0, 191, 166);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+button:hover {opacity: 1}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color: rgba(0, 191, 166, 0.395);}
+
+.main-boletas-select{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+input[type=submit] {
+    background-color: rgb(0, 191, 166);
+    width: 6rem;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: .5rem;
+    text-decoration: none;
+    margin: .4rem 0 .4rem 0;
+    cursor: pointer;
+    transition: box-shadow .35s ease-in-out;
+  }
+
+  input[type=submit]:hover{
+    box-shadow: 5px 5px 9px 3px rgba(0,0,0,0.26);
+   
+
+  }
+
+  select {
+    width: 20rem;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }

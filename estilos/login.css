@@ -1,0 +1,83 @@
+body{
+    opacity: 0;
+    transition: opacity 2s;
+    font-family: 'Quicksand', sans-serif;
+    border-left: 1rem solid rgb(0, 191, 166);
+    height: 100vh;
+}
+
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 2rem; */
+}
+
+/* .login img{
+    width: 35rem;
+    position: absolute;
+    top: 3rem;
+} */
+
+.login-img{
+    width: 35rem;
+    position: relative;
+    top: 3rem;
+}
+
+.form-login{
+    display: flex;
+    width: 18rem;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-login-input{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(217, 210, 210, 0.741);
+    margin: .4rem 0 .5rem 0;
+    transition: background-color .35s ease-in-out;
+    outline: none;
+}
+
+.form-login-input:focus{
+    background-color: rgb(196, 189, 189);
+    border: 3px solid rgba(0, 191, 166, 0.902);
+}
+input[type=submit] {
+    background-color: rgb(0, 191, 166);
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: .5rem;
+    text-decoration: none;
+    margin: .4rem 0 .4rem 0;
+    cursor: pointer;
+    transition: box-shadow .35s ease-in-out;
+  }
+
+  input[type=submit]:hover{
+    box-shadow: 5px 5px 9px 3px rgba(0,0,0,0.26);
+   
+
+  }
+
+  a{
+      text-decoration: none;
+      color: rgb(0, 191, 166);
+      font-weight: bold;
+
+  }
+
+/* .form-card{
+
+} */
