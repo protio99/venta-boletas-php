@@ -10,7 +10,7 @@
 <title>Formulario</title>
 </head>
 
-<body onload="document.body.style.opacity='1'">
+<body class="linea-vertical" onload="document.body.style.opacity='1'">
     <?php
     // session_start();
     if (empty($_SESSION["id_usuario"])) {
@@ -55,7 +55,7 @@
             <?php
             $nick_name = $_SESSION["nick_name"];
             $id_usuario = $_SESSION['id_usuario'];
-            $consulta = "SELECT v.id_evento, e.fecha, e.franja_horaria FROM venta v
+            $consulta = "SELECT v.id, v.id_evento, e.fecha, e.franja_horaria FROM venta v
                         INNER JOIN evento e ON (e.id = v.id_evento)
                         WHERE v.id_usuario = $id_usuario
                
@@ -81,7 +81,9 @@
                             <td><?php echo $compras_usuario['id_evento']; ?></td>
                             <td><?php echo $compras_usuario['fecha']; ?></td>
                             <td><?php echo $compras_usuario['franja_horaria']; ?></td>
-                            <td><button>Cancelar compra</button></td>
+                            <td><a href="eliminar_venta_usuario.php?id=<?php echo $compras_usuario['id'] ?>"><span class="material-symbols-outlined">
+                                        delete
+                                    </span></a></td>
                         </tr>
 
 

@@ -24,19 +24,19 @@
                 <h3 class="registro-form-titulo"><strong>Formulario de registro</strong></h3>
                 <div>
                     <label for="nombre">Nombre</label><br>
-                    <input type="text" name="nombre" placeholder="nombre" class="form-input" value="<?php isset($_POST['nombre']) ? $_POST['nombre'] : ''; ?>" required>
+                    <input type="text" name="nombre" placeholder="nombre" class="form-input" value="<?php isset($_POST['nombre']) ? $_POST['nombre'] : ''; ?>">
 
                 </div>
 
                 <div>
                     <label for="nick_name">Nick name</label><br>
-                    <input type="text" name="nick_name" placeholder="nick name" class="form-input" required>
+                    <input type="text" name="nick_name" placeholder="nick name" class="form-input" value="<?php isset($_POST['nick_name']) ? echo $nick_name : ''; ?>">
 
                 </div>
 
                 <div>
                     <label for="clave">Clave</label><br>
-                    <input type="password" name="clave" class="form-input" required>
+                    <input type="password" name="clave" class="form-input" value="<?php isset($clave) ?  $clave : ''; ?>">
 
                 </div>
 

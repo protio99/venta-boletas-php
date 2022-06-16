@@ -13,10 +13,18 @@ if (isset($_POST['btn_registro'])) {
 
         $_SESSION['mensaje'] = "El usuario ya existe";
         $_SESSION['tipo_mensaje'] = "danger";
-        header("Location: login.php");
+        header("Location: registro.php");
+    } elseif (empty($nombre) or empty($nick_name) or empty($clave)) {
+        $_SESSION['mensaje'] = "El formulario no debe contener campos vacios";
+        $_SESSION['tipo_mensaje'] = "danger";
+        header("Location: registro.php");
+    } elseif (strlen($clave) <= 8) {
+        $_SESSION['mensaje'] = "La contraseña debe ser mayor a 8 caracteres";
+        $_SESSION['tipo_mensaje'] = "danger";
+        header("Location: registro.php");
     } else {
-        $consulta = "INSERT INTO usuario(nombre, nick_name , clave) 
-        VALUES('$nombre', '$nick_name', '$clave')";
+        $consulta = "INSERT INTO usuario(nombre, nick_name, clave, admin) 
+        VALUES('$nombre', '$nick_name', '$clave', '0')";
         $resultado = mysqli_query($conexion, $consulta);
 
         if (!$resultado) {

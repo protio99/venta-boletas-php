@@ -1,0 +1,141 @@
+
+
+.admin{
+    display: flex;
+    justify-content: space-around;
+}
+
+.admin-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.admin-header-tittle{
+
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.admin-table-tittles{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.admin-eventos-creado{
+    background-color: rgba(217, 210, 210, 0.741);
+    width: 55vw;
+    height: 85vh;
+    padding: .3rem;
+    overflow-y:auto;
+    box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.27);
+}
+.admin-venta-boletas{
+    background-color: rgba(217, 210, 210, 0.741);
+    width: 40vw;
+    height: 70vh;
+    padding: .3rem;
+    overflow-y:auto;
+    box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.27);
+   
+}
+
+.crear-evento{
+    background-color: rgba(217, 210, 210, 0.741);
+    width: 40vw;
+    height: 40vh;
+    padding: .3rem;
+    overflow-y:auto;
+    box-shadow: 10px 10px 14px -1px rgba(0,0,0,0.27);   
+    margin: 1rem 0;
+}
+
+.crear-evento-form{
+    display: flex;
+    flex-direction: column;
+}
+input[type=date],input[type=number]{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.741);
+    margin: .4rem 0 .5rem 0;
+    transition: background-color .35s ease-in-out;
+    outline: none;
+}
+select {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.741);
+    margin: .4rem 0 .5rem 0;
+    transition: background-color .35s ease-in-out;
+    outline: none;
+  }
+.table-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+th {
+    background-color: rgb(0, 191, 166);
+    color: white;
+  }
+table{
+    width: 95%;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: center;
+}
+
+th, td{
+    padding: .4rem;
+    border-bottom: 1px solid #ddd;
+}
+
+
+button{
+    background-color: rgb(0, 191, 166);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+button:hover {opacity: 1}
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color: rgba(0, 191, 166, 0.395);}
+
+input[type=submit] {
+    background-color: rgb(0, 191, 166);
+    /* width: 6rem; */
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: .5rem;
+    text-decoration: none;
+    margin: .4rem 0 .4rem 0;
+    cursor: pointer;
+    transition: box-shadow .35s ease-in-out;
+  }
+
+  input[type=submit]:hover{
+    box-shadow: 5px 5px 9px 3px rgba(0,0,0,0.26);
+   
+
+  }
+
+  .horizontal{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  

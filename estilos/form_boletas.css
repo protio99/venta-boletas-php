@@ -2,7 +2,11 @@ body{
     opacity: 0;
     transition: opacity 2s;
     font-family: 'Quicksand', sans-serif;
-    border-left: 1rem solid rgb(0, 191, 166);
+}
+
+.linea-vertical{
+  border-left: 1rem solid rgb(0, 191, 166);
+
 }
 
 .main-boletas{
